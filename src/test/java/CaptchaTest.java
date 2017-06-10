@@ -15,4 +15,10 @@ public class CaptchaTest {
         Captcha captcha = new Captcha(1, 2, 1, 1);
         assertEquals("TWO", captcha.left());
     }
+
+    @Test
+    public void captcha_rightShouldReturn_1() {
+        Captcha captcha = new Captcha(1, 1, 1, 1);
+        assertEquals("1", captcha.right());
+    }
 }

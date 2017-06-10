@@ -12,4 +12,8 @@ public class Captcha {
 
         return "TWO";
     }
+
+    public String right() {
+        return "1";
+    }
 }
