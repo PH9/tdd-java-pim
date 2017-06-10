@@ -1,8 +1,11 @@
 public class Captcha {
-    public Captcha(int i, int i1, int i2, int i3) {
+    private int left;
+
+    public Captcha(int i, int left, int i2, int i3) {
+        this.left = left;
     }
 
     public String left() {
-        return "ONE";
+        return this.left == 1 ? "ONE" : "TWO";
     }
 }

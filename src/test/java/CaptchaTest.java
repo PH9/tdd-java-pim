@@ -9,4 +9,10 @@ public class CaptchaTest {
         Captcha captcha = new Captcha(1, 1, 1, 1);
         assertEquals("ONE", captcha.left());
     }
+
+    @Test
+    public void captcha_leftShouldReturn_TWO() {
+        Captcha captcha = new Captcha(1, 2, 1, 1);
+        assertEquals("TWO", captcha.left());
+    }
 }
