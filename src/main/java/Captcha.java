@@ -6,6 +6,10 @@ public class Captcha {
     }
 
     public String left() {
-        return this.left == 1 ? "ONE" : "TWO";
+        if (this.left == 1) {
+            return "ONE";
+        }
+
+        return "TWO";
     }
 }
